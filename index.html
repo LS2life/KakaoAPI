@@ -235,7 +235,7 @@
             marker.setMap(null);     // 마커 지움
             var mp= new kakao.maps.LatLng(lat, lng);
             map.setCenter(mp); //맵 이동
-            marker = new kakao.maps.Marker({Position,map});
+            marker = new kakao.maps.Marker({position,mp});
             marker.setMap(map); // Marker
         }
 
