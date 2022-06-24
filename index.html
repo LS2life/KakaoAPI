@@ -231,7 +231,7 @@
         </fieldset>
     </form>
 
-<div id="map" style="width: 750px; height: 350px;"></div>
+    <div id="map" style="width: 750px; height: 350px;"></div>
 
     <script src="//dapi.kakao.com/v2/maps/sdk.js?appkey=2b02d73fd6ffc86018051f4fbddd814f"></script>
 	<script>
@@ -260,7 +260,7 @@
             marker.setMap(null);     // 마커 지움
             var mp= new kakao.maps.LatLng(lat, lng);
             map.setCenter(mp); //맵 이동
-            marker = new kakao.maps.Marker({Position;map});
+            marker = new kakao.maps.Marker({Position,map});
             marker.setMap(map); // Marker
         }
 
@@ -274,7 +274,7 @@
 		// 인포윈도우를 지도에 표시한다
 		infowindow.open(map, marker);
 
-		// 마커에 클릭 이벤트를 등록한다 (우클릭 : rightclick)
+		// 마커에 클릭 이벤트를 등록한다 (우클릭 : right click)
 		kakao.maps.event.addListener(marker, 'click', function() {
 		    alert('마커를 클릭했습니다!');
 		});
